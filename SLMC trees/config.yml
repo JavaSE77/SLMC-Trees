@@ -1,0 +1,62 @@
+#Put the location of the schematics folder
+Location: '/plugins/WorldEdit/schematics/Trees/'
+#Suppress tree grown logger info?
+SuppressInfoLogger: true
+#Put all materials you want to register here, then paste this template below
+Materials:
+  - 'brown_mushroom'
+  - 'acacia_sapling'
+  - 'birch_sapling'
+  - 'dark_oak_sapling'
+  - 'jungle_sapling'
+  - 'oak_sapling'
+  - 'spruse_sapling'
+brown_mushroom: #Case sensitive. Must be lowercase!
+#Name of the schem file followed by a ':' then put the percentage you want the files to be. Must add up to 100.
+  - 'DragonFly.schematic:50'
+  - 'Tree.schematic:50'
+acacia_sapling: #Case sensitive. Must be same case as Materials
+#Name of the schem file followed by a ':' then put the percentage you want the files to be. Must add up to 100.
+  - 'Acacia/1AcaciaTree.schematic:20'
+  - 'Acacia/1AcaciaTree2.schematic:20'
+  - 'Acacia/1AcaciaTree3.schematic:10'
+  - 'Acacia/1AcaciaTree4.schematic:10'
+  - 'Acacia/1AcaciaTree5.schematic:20'
+  - 'Acacia/1AcaciaTree6.schematic:20'
+birch_sapling: #Case sensitive. Must be same case as Materials
+#Name of the schem file followed by a ':' then put the percentage you want the files to be. Must add up to 100.
+  - 'Birch/1BirchTree.schematic:20'
+  - 'Birch/1BirchTree2.schematic:20'
+  - 'Birch/1BirchTree3.schematic:20'
+  - 'Birch/1BirchTree4.schematic:20'
+  - 'Birch/1BirchTree5.schematic:20'
+dark_oak_sapling: #Case sensitive. Must be same case as Materials
+#Name of the schem file followed by a ':' then put the percentage you want the files to be. Must add up to 100.
+  - 'DarkOak/1DarkOak.schematic.schematic:30'
+  - 'DarkOak/1DarkOak2.schematic.schematic:40'
+  - 'DarkOak/1DarkOak3.schematic.schematic:30'
+jungle_sapling: #Case sensitive. Must be same case as Materials
+#Name of the schem file followed by a ':' then put the percentage you want the files to be. Must add up to 100.
+  - 'Jungle/1JungleTree.schematic:20'
+  - 'Jungle/1JungleTree2.schematic:20'
+  - 'Jungle/1JungleTree3.schematic:30'
+  - 'Jungle/1JungleTree4.schematic:30'
+oak_sapling: #Case sensitive. Must be same case as Materials
+#Name of the schem file followed by a ':' then put the percentage you want the files to be. Must add up to 100.
+  - 'Oak/OakTree1.schem:20'
+  - 'Oak/OakTree2.schem:20'
+  - 'Oak/OakTree3.schem:10'
+  - 'Oak/OakTree4.schem:10'
+  - 'Oak/OakTree5.schem:10'
+  - 'Oak/OakTree6.schem:10'
+  - 'Oak/OakTree7.schem:10'
+  - 'Oak/OakTree8.schem:10'
+spruse_sapling: #Case sensitive. Must be same case as Materials
+#Name of the schem file followed by a ':' then put the percentage you want the files to be. Must add up to 100.
+  - 'Spruce/1SpruceTree.schematic:20'
+  - 'Spruce/1SpruceTree1.schematic:20'
+  - 'Spruce/1SpruceTree2.schematic:20'
+  - 'Spruce/1SpruceTree3.schematic:10'
+  - 'Spruce/1SpruceTree4.schematic:10'
+  - 'Spruce/1SpruceTree5.schematic:10'
+  - 'Spruce/1SpruceTree6.schematic:10'

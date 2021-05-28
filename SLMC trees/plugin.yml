@@ -1,0 +1,9 @@
+name: SLMC-Trees
+author: JavaSE
+version: 1.16.5
+api-version: 1.16
+description: Use custom trees
+main: com.shadowlandsmc.javase.trees.Main
+depend: [WorldEdit]
+commands:
+permissions:
