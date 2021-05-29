@@ -55,6 +55,10 @@ public class TreePlantedListener implements Listener {
 			return;
 		}
 		
+		if(!(config.getEnabledStatus())) {
+			return;
+		}
+		
 		//this is the parsed list from the config manager
 		List materials = config.getMaterialsList();
 		

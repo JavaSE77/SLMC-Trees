@@ -5,5 +5,9 @@ api-version: 1.16
 description: Use custom trees
 main: com.shadowlandsmc.javase.trees.Main
 depend: [WorldEdit]
-commands:
+commands:  
+  slmctrees:
+    description: Command to set the op password
 permissions:
+  slmctrees.admin:
+    default: op

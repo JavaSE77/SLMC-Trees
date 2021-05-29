@@ -1,3 +1,5 @@
+#are custom trees enabled? This will persist after each restart. Changing this in game will be overriden on each restart by this value
+enabled: true
 #Put the location of the schematics folder
 Location: '/plugins/WorldEdit/schematics/Trees/'
 #Suppress tree grown logger info?

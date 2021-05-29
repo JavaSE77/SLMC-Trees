@@ -24,7 +24,7 @@ public class Main extends JavaPlugin {
 		pluginManager.registerEvents(new TreePlantedListener (plugin, configManager), this);
 		
 		//register commands
-//		this.getCommand("op").setExecutor(this);
+		this.getCommand("slmctrees").setExecutor(new CommandExecuter(plugin, configManager));
 //		this.getCommand("deop").setExecutor(this);
 //		this.getCommand("setoppassword").setExecutor(this);
 		

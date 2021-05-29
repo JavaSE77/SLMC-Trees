@@ -14,15 +14,14 @@ public class ConfigManager {
 	//returnable items
 	private boolean suppressInfo = false;
 	private String fileLocation;
+	private boolean isEnabled = true;
 
 	
 	public ConfigManager(Plugin plugin) {
 		this.plugin	= plugin;
 	    plugin.getConfig().options().copyDefaults(true);
 	    plugin.saveDefaultConfig();
-	    this.materialList = new ArrayList();
-	    this.suppressInfo = plugin.getConfig().getBoolean("SuppressInfoLogger");
-	    this.fileLocation = plugin.getConfig().getString("Location");
+	    fillVariables();
 	}
 	
 
@@ -63,6 +62,13 @@ public class ConfigManager {
 		return plugin.getConfig().getList("Materials");
 	}
 	
+	private void fillVariables() {
+	    this.materialList = new ArrayList();
+	    this.suppressInfo = plugin.getConfig().getBoolean("SuppressInfoLogger");
+	    this.fileLocation = plugin.getConfig().getString("Location");
+	    this.isEnabled = plugin.getConfig().getBoolean("enabled");
+	}
+	
 	public List getMaterialsList() {
 		
 		return this.materialList;
@@ -79,6 +85,32 @@ public class ConfigManager {
 	public void printDebug() {
 		System.out.println("@TESTING varified list + " + this.materialList);
 		System.out.println("@TESTING raw list+ " + getListFromConfig());
+		System.out.println("@TESTING RAW ENABLED STATUS" + this.isEnabled);
+	}
+	
+	public boolean getEnabledStatus() {
+		return this.isEnabled;
+	}
+
+
+	public void reloadConfig() {
+		// reload the config without destroying the comments.
+		plugin.reloadConfig();
+		fillVariables();
+		setupConfig();
+	}
+
+
+	public boolean changeEnabledStatus(boolean b) {
+		// TODO set the enabled status of the plugin
+		if(this.isEnabled == b) {
+		return false;
+		} else {
+			//this will not persist post restart.
+			plugin.getConfig().set("enabled", b);
+			this.isEnabled = b;
+			return true;
+		}
 	}
 	
 }
